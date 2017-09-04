@@ -2,6 +2,7 @@ package statistics
 
 import (
 	"testing"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -34,7 +35,6 @@ func TestStandardDeviationPopulation(t *testing.T) {
 		want float64
 	}{
 		{"standardDeviationPopulation", args{values: []float64{10, 15, 30, 74, 1, 30}}, 23.5773},
-
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

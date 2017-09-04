@@ -1,8 +1,8 @@
 package statistics
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 const allowedEpsilon = 0.00001

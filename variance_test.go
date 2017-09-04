@@ -2,6 +2,7 @@ package statistics
 
 import (
 	"testing"
+
 	"github.com/stretchr/testify/assert"
 )
 
