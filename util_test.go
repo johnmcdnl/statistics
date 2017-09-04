@@ -1,8 +1,15 @@
 package statistics
 
-import "testing"
+import (
+	"testing"
+	"fmt"
+)
 
 const allowedEpsilon = 0.00001
+
+func fmtError(values []float64, want, got float64) string {
+	return fmt.Sprintf("Values: %v Want: %.2g Got %.2g", values, want, got)
+}
 
 func Test_isEven(t *testing.T) {
 	type args struct {
